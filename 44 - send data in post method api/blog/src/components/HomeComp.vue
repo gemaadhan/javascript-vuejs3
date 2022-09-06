@@ -28,11 +28,13 @@ export default {
       let result = await axios.post("http://127.0.0.1:3000/penanganan-rtlh", {
         tahun: this.tahun,
         kode_kelurahan: this.kode_kelurahan,
-        apbn_bsps: {
-          rencana: {
-            pk: {
-              unit: this.unit,
-              anggaran: this.anggaran,
+        sumber_dana: {
+          apbn_bsps: {
+            rencana: {
+              pk: {
+                unit: this.unit,
+                anggaran: this.anggaran,
+              },
             },
           },
         },
