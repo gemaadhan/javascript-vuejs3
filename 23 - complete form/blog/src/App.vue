@@ -1,17 +1,15 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <HelloWorld msg="Welcome to Code Step by Step" />
+  <img alt="Vue logo" src="./assets/logo.png" />
+
   <HomeComp />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import HomeComp from "./components/HomeComp.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     HomeComp,
   },
 };
@@ -22,7 +20,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
