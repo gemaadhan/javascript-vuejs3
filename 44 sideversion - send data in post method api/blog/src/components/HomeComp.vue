@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     async addUser() {
-      axios.defaults.baseURL = "tes.com";
+      // axios.defaults.baseURL = "tes.com";
       let result = await axios.post("http://127.0.0.1:3000/penanganan-rtlh", {
         tahun: this.tahun,
         kode_kelurahan: this.kode_kelurahan,
