@@ -32,17 +32,26 @@ export default {
       console.log(result);
 
       if (result.status == 201) {
-        alert("sign up done");
+
         localStorage.setItem("user-info", JSON.stringify(result.data));
+        this.$router.push({ name: "Home" })
       }
     },
   },
+  mounted() {
+
+    let user = localStorage.getItem("user-info");
+    if (user) {
+      this.$router.push({ name: "Home" })
+    }
+  }
 };
 </script>
 <style>
 .logo {
   width: 100px;
 }
+
 .register input {
   width: 300px;
   height: 40px;
