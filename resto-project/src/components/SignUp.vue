@@ -7,11 +7,15 @@
     <input type="password" v-model="password" placeholder="Enter Password" />
 
     <button v-on:click="signUp">Signup</button>
-    <p><router-link to="/login">Login</router-link></p>
+    <p>
+      <router-link to="/login">Login</router-link>
+    </p>
   </div>
 </template>
 <script>
+
 import axios from "axios";
+
 export default {
   name: "SignUp",
   data() {
@@ -46,4 +50,5 @@ export default {
 };
 </script>
 <style>
+
 </style>
